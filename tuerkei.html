@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkei Spa Urlaub</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ChoiceMade</a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html#Urlaub">Urlaub</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#countrysite">Landhaus →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="kroatien.html">Kroatien</a></li>
+                                <li><a href="frankreich.html">Frankreich</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#spa">Spa Hotel →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="tuerkei.html">Türkei</a></li>
+                                <li><a href="aegypten.html">Ägypten</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#nature">Skandinavien →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="norwegen.html">Norwegen</a></li>
+                                <li><a href="island.html">Island</a></li>
+                                <li><a href="groenland.html">Grönland</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img class="hero-img" src="imgs/turkey-hero.jpg" alt="Luxury Turkish resort">
+            <div class="herotext">
+                <h1>Spa & Wellness Urlaub in der Türkei</h1>
+                <p>Luxuriöse Entspannung an der türkischen Riviera</p>
+            </div>    
+        </section>
+
+        <!-- Section 1: The Region -->
+        <section id="region" class="about">
+            <h2>Die Region</h2>
+            <p>Die türkische Riviera vereint traumhafte Strände, türkisblaues Meer und erstklassige Wellness-Anlagen. Genießen Sie orientalische Gastfreundschaft und perfektes Urlaubswetter.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Antalya Riviera</h3>
+                    <p>Goldene Strände, antike Ruinen und moderne Luxusresorts</p>
+                </div>
+                <div class="card">
+                    <h3>Türkisches Bad</h3>
+                    <p>Traditionelle Hamam-Kultur trifft auf moderne Wellness-Anwendungen</p>
+                </div>
+                <div class="card">
+                    <h3>Mittelmeerklima</h3>
+                    <p>300 Sonnentage im Jahr für perfekten Strandurlaub</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Accommodation -->
+        <section id="accommodation" class="contact">
+            <h2>Unsere Unterkunft</h2>
+            <p>5-Sterne Luxushotel mit preisgekröntem Spa, Privatstrand und All-Inclusive Service.</p>
+            
+            <div class="image-slider">
+                <div class="slider-container">
+                    <img src="imgs/turkey-hotel-1.jpg" alt="Hotel Resort" class="slider-img active">
+                    <img src="imgs/turkey-hotel-2.jpg" alt="Spa Bereich" class="slider-img">
+                    <img src="imgs/turkey-hotel-3.jpg" alt="Pool" class="slider-img">
+                    <img src="imgs/turkey-hotel-4.jpg" alt="Strand" class="slider-img">
+                    <img src="imgs/turkey-hotel-5.jpg" alt="Zimmer" class="slider-img">
+                </div>
+                
+                <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+                
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+            
+            <a href="https://example-turkey-resort.com" target="_blank" class="hotel-link">Zur Hotel Website →</a>
+        </section>
+
+        <!-- Section 3: Activities -->
+        <section id="activities" class="about">
+            <h2>Aktivitäten & Erlebnisse</h2>
+            <p>Perfekte Balance zwischen totaler Entspannung und spannenden Ausflügen.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>🧘 Entspannung</h3>
+                    <p>Spa-Treatments, Hamam, Massage, Yoga am Strand, Infinity Pools</p>
+                </div>
+                <div class="card">
+                    <h3>⛰️ Sport & Abenteuer</h3>
+                    <p>Tauchen, Parasailing, Jetski, Beachvolleyball, Fitness-Center</p>
+                </div>
+                <div class="card">
+                    <h3>🎨 Kultur & Sightseeing</h3>
+                    <p>Ephesus, Pamukkale, Side, Perge, türkische Basare, Bootstouren</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ChoiceMade. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

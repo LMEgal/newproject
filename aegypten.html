@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ägypten Spa Urlaub</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ChoiceMade</a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html#Urlaub">Urlaub</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#countrysite">Landhaus →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="kroatien.html">Kroatien</a></li>
+                                <li><a href="frankreich.html">Frankreich</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#spa">Spa Hotel →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="tuerkei.html">Türkei</a></li>
+                                <li><a href="aegypten.html">Ägypten</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#nature">Skandinavien →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="norwegen.html">Norwegen</a></li>
+                                <li><a href="island.html">Island</a></li>
+                                <li><a href="groenland.html">Grönland</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img class="hero-img" src="imgs/egypt-hero.jpg" alt="Red Sea resort Egypt">
+            <div class="herotext">
+                <h1>Spa & Wellness Urlaub in Ägypten</h1>
+                <p>Luxusurlaub am Roten Meer mit Traumstränden und Unterwasserwelt</p>
+            </div>    
+        </section>
+
+        <!-- Section 1: The Region -->
+        <section id="region" class="about">
+            <h2>Die Region</h2>
+            <p>Das Rote Meer ist berühmt für kristallklares Wasser, farbenfrohe Korallenriffe und endlose Sandstrände. Verbinden Sie Wellness mit faszinierenden Tauchgängen und jahrtausendealter Kultur.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Rotes Meer</h3>
+                    <p>Weltklasse-Tauchgebiete mit bunten Korallenriffen und exotischen Fischen</p>
+                </div>
+                <div class="card">
+                    <h3>Hurghada & Marsa Alam</h3>
+                    <p>Moderne Resorts an unberührten Stränden mit ganzjährig warmem Wetter</p>
+                </div>
+                <div class="card">
+                    <h3>Wüste & Kultur</h3>
+                    <p>Ausflüge zu den Pyramiden, Luxor und Beduinen-Dörfern</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Accommodation -->
+        <section id="accommodation" class="contact">
+            <h2>Unsere Unterkunft</h2>
+            <p>Exklusives 5-Sterne Resort direkt am Roten Meer mit eigenem Riff und luxuriösem Spa.</p>
+            
+            <div class="image-slider">
+                <div class="slider-container">
+                    <img src="imgs/egypt-hotel-1.jpg" alt="Resort Außenansicht" class="slider-img active">
+                    <img src="imgs/egypt-hotel-2.jpg" alt="Spa & Wellness" class="slider-img">
+                    <img src="imgs/egypt-hotel-3.jpg" alt="Pool Landschaft" class="slider-img">
+                    <img src="imgs/egypt-hotel-4.jpg" alt="Privatstrand" class="slider-img">
+                    <img src="imgs/egypt-hotel-5.jpg" alt="Suite" class="slider-img">
+                </div>
+                
+                <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+                
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+            
+            <a href="https://example-egypt-resort.com" target="_blank" class="hotel-link">Zur Hotel Website →</a>
+        </section>
+
+        <!-- Section 3: Activities -->
+        <section id="activities" class="about">
+            <h2>Aktivitäten & Erlebnisse</h2>
+            <p>Von Unterwasserabenteuern bis zu Wüstensafaris - Ägypten bietet unvergessliche Erlebnisse.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>🧘 Entspannung</h3>
+                    <p>Luxus-Spa, Massage, Hamam, Infinity-Pools, Strandliegen mit Service</p>
+                </div>
+                <div class="card">
+                    <h3>⛰️ Sport & Abenteuer</h3>
+                    <p>Tauchen, Schnorcheln, Kitesurfen, Quad-Touren, Wüstensafaris</p>
+                </div>
+                <div class="card">
+                    <h3>🎨 Kultur & Sightseeing</h3>
+                    <p>Pyramiden von Gizeh, Luxor Tempel, Kairo, Nil-Kreuzfahrten, Basare</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ChoiceMade. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

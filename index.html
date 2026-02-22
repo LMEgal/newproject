@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <!-- head: metainformationen, nicht sichtbar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Basic Website</title>
+    <!-- link zu css, styles können auf die html angewandt werden -->
+    <link rel="stylesheet" href="styles/styles.css" />  
+  </head>
+  <!-- mit body beginnt der sichtbare Inhalt -->
+  <body>
+    <!-- header ist ganz oben: Logo + die Navigation -->
+    <header>
+      <nav>
+        <!-- Name des Logos + class für die css stylings -->
+        <div class="logo">ChoiceMade</div>
+        <ul class="nav-links"> <!-- Unordered List (ul) für Navigation, class für CSS -->
+          <!-- Here is the navigation -->
+          <li class="dropdown"> <!-- List Item mit Dropdown-Funktionalität -->
+            <a href="#Urlaub">Urlaub</a> <!-- Anchor-Link: scrollt zu Section mit id="Urlaub" und name-->
+            <ul class="dropdown-menu"> <!-- Unordered List (ul) für dropdown menu, class für CSS -->
+              <li class="dropdown-submenu"> <!-- 1. List Item im Dropdown: Landhaus Submenu -->
+                <a href="#countrysite">Landhaus →</a> <!-- anchor-link?? Name für ersten Dropdown-Punkt -->
+                <ul class="dropdown-submenu-content"> <!-- submenuinhalt für Landhaus -->
+                  <li><a href="kroatien.html">Kroatien</a></li> <!-- Link zur 1. submenu Seite -->
+                  <li><a href="frankreich.html">Frankreich</a></li> <!-- Link zur 2. submenu Seite -->
+                </ul> <!-- ende submenuinhalt -->
+              </li> <!-- ende Landhaus submenu -->
+              <li class="dropdown-submenu"> <!-- 2. List Item im Dropdown: Spa Hotel Submenu -->
+                <a href="#spa">Spa Hotel →</a> <!-- anchor-link?? Name für zweiten Dropdown-Punkt -->
+                <ul class="dropdown-submenu-content"> <!-- submenuinhalt für Spa Hotel -->
+                  <li><a href="tuerkei.html">Türkei</a></li> <!-- Link zur 1. submenu Seite -->
+                  <li><a href="aegypten.html">Ägypten</a></li> <!-- Link zur 2. submenu Seite -->
+                </ul> <!-- ende submenuinhalt -->
+              </li> <!-- ende Spa Hotel submenu -->
+              <li class="dropdown-submenu"> <!-- 3. List Item im Dropdown: Skandinavien Submenu -->
+                <a href="#nature">Skandinavien →</a> <!-- anchor-link?? Name für dritten Dropdown-Punkt -->
+                <ul class="dropdown-submenu-content">
+                  <li><a href="norwegen.html">Norwegen</a></li>
+                  <li><a href="groenland.html">Grönland</a></li>
+                </ul>
+              </li> <!-- Ende Skandinavien-Submenu -->
+            </ul> <!-- Ende Dropdown-Menu -->
+          </li> <!-- Ende Dropdown -->
+          <li><a href="#about">About</a></li> <!-- direkt li, weil kein dropdown, Anchor-Link: scrollt zu Section mit id="About" und name-->
+        </ul> <!-- Ende liste der Navigation -->
+      </nav>
+       <!-- Here is the end navigation -->
+    </header> <!-- Ende header -->
+    <main> <!-- start Main: Hauptinhaltsabschnitt -->
+
+        <!-- hero section: Was als erstes gesehen wird: erster Abschnitt mit Text und Bild -->
+      <section id="Urlaub" class="hero"> <!-- id="Urlaub" (für #Urlaub Link), class für CSS -->
+        <img
+          class="hero-img"  
+          src="imgs/girl-coding.webp" 
+          alt="image of a computer girl" 
+        /> <!-- class für css, Pfad zum Bild und Text(hinterm Bild)-->
+        <div class="herotext"> <!-- hero container "partent", class für css -->
+          <h1>Where to go on holidays?</h1> <!-- h1=Überschrift -->
+          <p>My first Website built with HTML, CSS, and JavaScript</p> <!-- p=kleineerer Text -->
+          <a class="cta-button" href="kroatien.html">Get Started</a> <!-- button, extra class für evtl. weitere buttons -->
+        </div> <!--Ende hero container -->
+      </section> <!--Ende section -->
+      <!--Nächste section (about) -->
+      <section id="about" class="about"> <!-- id="about" für Anker-Links, class für CSS -->
+        <h2>About Us</h2>  <!--Überschrift dieser section -->
+        <p>We are going on holidays</p>  <!--Text der section -->
+        <div class="card-container">   <!-- container, der die cards bündelt für Flexbox, CSS -->
+          <div class="card"> <!-- Erste Card: einzelnes div mit class "card" für CSS -->
+            <h3>Shady</h3>  <!--Überschrift der card -->
+            <p>Needs to go on holidays</p> <!--Beschreibung -->
+          </div> <!-- Ende erste card -->
+          <div class="card"> <!-- Zweite Karte, gleiche Struktur wie erste -->
+            <h3>Laura</h3> <!--Überschrift der card -->
+            <p>Wants to go on holidays</p>  <!-- analog -->
+          </div> <!-- analog -->
+        </div>  <!-- Ende card-container -->
+      </section> <!-- Ende des About-Abschnitts -->
+ <!--Nächste section (egal) -->
+      <section class="egal">
+        <div> <!-- div-container für Button (gleicher wie im hero)-->
+          <a class="cta-button" href="kroatien.html">Get Started</a> <!-- Link=Button, heißt:get startet, führt zu kroatien, class damit Link nach button aussieht-->
+        </div>
+        <div> <!-- 2. div-container für 3.Button -->
+          <a class="cta-button" href="kroatien.html">Get Started</a>
+        </div>
+      </section>
+    </main>
+    <!-- Ende main -->
+    <footer> <!-- Beginn: Fußzeile -->
+      <p>&copy; 2026 ChoiceMade. All rights reserved.</p> <!-- text, &copy; ist das Copyright-Symbol -->
+    </footer> <!-- Ende: Fußzeile -->
+    <script src="script.js"></script> <!-- Bindet die JavaScript-Datei "script.js" ein. Kommt ans Ende des bodys,
+     damit die HTML-Elemente schon geladen sind, bevor JS ausgeführt wird -->
+  </body> <!-- Ende body: sichtbarer Seiteninhalt -->
+</html> <!-- Schließt das gesamte HTML-Dokument -->

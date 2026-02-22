@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frankreich Urlaub</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ChoiceMade</a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html#Urlaub">Urlaub</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#countrysite">Landhaus →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="kroatien.html">Kroatien</a></li>
+                                <li><a href="frankreich.html">Frankreich</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#spa">Spa Hotel →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="tuerkei.html">Türkei</a></li>
+                                <li><a href="aegypten.html">Ägypten</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#nature">Skandinavien →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="norwegen.html">Norwegen</a></li>
+                                <li><a href="island.html">Island</a></li>
+                                <li><a href="groenland.html">Grönland</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img class="hero-img" src="imgs/france-hero.jpg" alt="Beautiful French countryside">
+            <div class="herotext">
+                <h1>Landhaus Urlaub in Frankreich</h1>
+                <p>Erleben Sie die Provence und das französische Savoir-vivre</p>
+            </div>    
+        </section>
+
+        <!-- Section 1: The Region -->
+        <section id="region" class="about">
+            <h2>Die Region</h2>
+            <p>Die Provence verzaubert mit Lavendelfeldern, pittoresken Dörfern und exquisiter Küche. Genießen Sie französische Eleganz in rustikalem Ambiente.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Provence</h3>
+                    <p>Duftende Lavendelfelder, historische Dörfer und sonnenverwöhnte Landschaften</p>
+                </div>
+                <div class="card">
+                    <h3>Côte d'Azur</h3>
+                    <p>Glamouröse Küstenstädte und türkisblaues Mittelmeer in unmittelbarer Nähe</p>
+                </div>
+                <div class="card">
+                    <h3>Weinkultur</h3>
+                    <p>Weltberühmte Weinregionen wie Châteauneuf-du-Pape und Côtes du Rhône</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Accommodation -->
+        <section id="accommodation" class="contact">
+            <h2>Unsere Unterkunft</h2>
+            <p>Charmantes Mas (provenzalisches Landhaus) mit Pool und Blick über Weinberge und Olivenhaine.</p>
+            
+            <div class="image-slider">
+                <div class="slider-container">
+                    <img src="imgs/france-house-1.jpg" alt="Mas Außenansicht" class="slider-img active">
+                    <img src="imgs/france-house-2.jpg" alt="Wohnzimmer" class="slider-img">
+                    <img src="imgs/france-house-3.jpg" alt="Küche" class="slider-img">
+                    <img src="imgs/france-house-4.jpg" alt="Pool" class="slider-img">
+                    <img src="imgs/france-house-5.jpg" alt="Garten" class="slider-img">
+                </div>
+                
+                <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+                
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+            
+            <a href="https://example-provence-villa.com" target="_blank" class="hotel-link">Zur Unterkunft Website →</a>
+        </section>
+
+        <!-- Section 3: Activities -->
+        <section id="activities" class="about">
+            <h2>Aktivitäten & Erlebnisse</h2>
+            <p>Tauchen Sie ein in die französische Lebensart zwischen Genuss und Kultur.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>🧘 Entspannung</h3>
+                    <p>Lavendel-Spaziergänge, Pétanque spielen, Weinprobe, Markttage genießen</p>
+                </div>
+                <div class="card">
+                    <h3>⛰️ Sport & Abenteuer</h3>
+                    <p>Radfahren durch Weinberge, Wandern im Luberon, Kanufahren in der Ardèche</p>
+                </div>
+                <div class="card">
+                    <h3>🎨 Kultur & Sightseeing</h3>
+                    <p>Avignon, Aix-en-Provence, Arles, Pont du Gard, Künstlerdörfer</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ChoiceMade. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

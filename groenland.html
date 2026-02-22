@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grönland Urlaub</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ChoiceMade</a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html#Urlaub">Urlaub</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#countrysite">Landhaus →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="kroatien.html">Kroatien</a></li>
+                                <li><a href="frankreich.html">Frankreich</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#spa">Spa Hotel →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="tuerkei.html">Türkei</a></li>
+                                <li><a href="aegypten.html">Ägypten</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#nature">Skandinavien →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="norwegen.html">Norwegen</a></li>
+                                <li><a href="island.html">Island</a></li>
+                                <li><a href="groenland.html">Grönland</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img class="hero-img" src="imgs/greenland-hero.jpg" alt="Greenland icebergs">
+            <div class="herotext">
+                <h1>Abenteuer Urlaub in Grönland</h1>
+                <p>Entdecken Sie die letzte Wildnis der Arktis</p>
+            </div>    
+        </section>
+
+        <!-- Section 1: The Region -->
+        <section id="region" class="about">
+            <h2>Die Region</h2>
+            <p>Grönland ist die größte Insel der Welt und bietet unberührte arktische Wildnis. Gigantische Eisberge, endlose Tundra und die faszinierende Inuit-Kultur erwarten Sie.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Eisfjorde</h3>
+                    <p>UNESCO-geschützte Eisfjorde mit spektakulären Eisbergen und Gletschern</p>
+                </div>
+                <div class="card">
+                    <h3>Mitternachtssonne</h3>
+                    <p>Im Sommer geht die Sonne nie unter - 24 Stunden Tageslicht</p>
+                </div>
+                <div class="card">
+                    <h3>Inuit-Kultur</h3>
+                    <p>Erleben Sie die traditionelle Lebensweise der Ureinwohner Grönlands</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Accommodation -->
+        <section id="accommodation" class="contact">
+            <h2>Unsere Unterkunft</h2>
+            <p>Komfortables Hotel in Ilulissat mit Panoramablick auf den Eisfjord - UNESCO Welterbe.</p>
+            
+            <div class="image-slider">
+                <div class="slider-container">
+                    <img src="imgs/greenland-hotel-1.jpg" alt="Hotel mit Eisberg-Blick" class="slider-img active">
+                    <img src="imgs/greenland-hotel-2.jpg" alt="Zimmer" class="slider-img">
+                    <img src="imgs/greenland-hotel-3.jpg" alt="Restaurant" class="slider-img">
+                    <img src="imgs/greenland-hotel-4.jpg" alt="Lounge" class="slider-img">
+                    <img src="imgs/greenland-hotel-5.jpg" alt="Aussichtsterrasse" class="slider-img">
+                </div>
+                
+                <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+                
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+            
+            <a href="https://example-greenland-hotel.com" target="_blank" class="hotel-link">Zur Hotel Website →</a>
+        </section>
+
+        <!-- Section 3: Activities -->
+        <section id="activities" class="about">
+            <h2>Aktivitäten & Erlebnisse</h2>
+            <p>Arktische Abenteuer in einer der einzigartigsten Regionen der Welt.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>🧘 Entspannung</h3>
+                    <p>Eisberg-Beobachtung, Mitternachtssonne genießen, Sauna mit Eisfjord-Blick</p>
+                </div>
+                <div class="card">
+                    <h3>⛰️ Sport & Abenteuer</h3>
+                    <p>Hundeschlitten, Eisberg-Bootstouren, Kajak fahren, Gletscherwanderungen, Walsafaris</p>
+                </div>
+                <div class="card">
+                    <h3>🎨 Kultur & Sightseeing</h3>
+                    <p>Inuit-Dörfer, Eisfjord UNESCO-Stätte, Nordlicht (Winter), Grönländische Küche</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ChoiceMade. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

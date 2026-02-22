@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kroatien Urlaub</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ChoiceMade</a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html#Urlaub">Urlaub</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#countrysite">Landhaus →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="kroatien.html">Kroatien</a></li>
+                                <li><a href="frankreich.html">Frankreich</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#spa">Spa Hotel →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="tuerkei.html">Türkei</a></li>
+                                <li><a href="aegypten.html">Ägypten</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#nature">Skandinavien →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="norwegen.html">Norwegen</a></li>
+                                <li><a href="island.html">Island</a></li>
+                                <li><a href="groenland.html">Grönland</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img class="hero-img" src="imgs/Mljet-Nationalpark.jpeg" alt="Beautiful Croatia landscape">
+            <div class="herotext">
+                <h1>Landhaus in Kroatien</h1>
+                <p>Entdecken Sie authentisches Landleben an der adriatischen Küste</p>
+            </div>    
+        </section>
+
+        <!-- Section 1: The Region -->
+        <section id="region" class="about">
+            <h2>Die Region</h2>
+            <p>Kroatien bietet idyllische Landschaften zwischen Olivenhainen, Weinbergen und kristallklarem Meer. Erleben Sie mediterranes Flair in traditionellen Steinhäusern mit modernem Komfort.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Istrien & Dalmatien</h3>
+                    <p>Malerische Küstenregionen mit historischen Städten und versteckten Buchten</p>
+                </div>
+                <div class="card">
+                    <h3>Weinregionen</h3>
+                    <p>Entdecken Sie erstklassige Weingüter und verkosten Sie lokale Spezialitäten</p>
+                </div>
+                <div class="card">
+                    <h3>Nationalparks</h3>
+                    <p>Plitvicer Seen und Krka Wasserfälle - UNESCO Weltnaturerbe</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Accommodation -->
+        <section id="accommodation" class="contact">
+            <h2>Unsere Unterkunft</h2>
+            <p>Traditionelle dalmatinische Steinhäuser mit Pool, umgeben von Olivenhainen und Weinbergen.</p>
+            
+            <div class="image-slider">
+                <div class="slider-container">
+                    <img src="imgs/Kroatien1.webp" alt="Steinhaus Außenansicht" class="slider-img active">
+                    <img src="imgs/Kroatien2.webp" alt="Wohnbereich" class="slider-img">
+                    <img src="imgs/Kro3.webp" alt="Küche" class="slider-img">
+                    <img src="imgs/kro4.webp" alt="Pool" class="slider-img">
+                    <img src="imgs/kro5.webp" alt="Terrasse" class="slider-img">
+                </div>
+                
+                <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+                
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+            
+            <a href="https://crovillas.com/villa/terra-calm" target="_blank" class="hotel-link">Zur Unterkunft Website →</a>
+        </section>
+
+        <!-- Section 3: Activities -->
+        <section id="activities" class="about">
+            <h2>Aktivitäten & Erlebnisse</h2>
+            <p>Genießen Sie mediterranes Lebensgefühl zwischen Kultur, Kulinarik und Natur.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>🧘 Entspannung</h3>
+                    <p>Pool-Tage, Weinverkostungen, Sonnenuntergänge, Olivenhain-Spaziergänge</p>
+                </div>
+                <div class="card">
+                    <h3>⛰️ Sport & Abenteuer</h3>
+                    <p>Radtouren, Segeln, Schnorcheln, Kajakfahren, Klettern in Paklenica</p>
+                </div>
+                <div class="card">
+                    <h3>🎨 Kultur & Sightseeing</h3>
+                    <p>Dubrovnik, Split, Zadar, römische Ruinen, traditionelle Märkte</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ChoiceMade All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

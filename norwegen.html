@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norwegen Urlaub</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ChoiceMade</a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html#Urlaub">Urlaub</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="#countrysite">Landhaus →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="kroatien.html">Kroatien</a></li>
+                                <li><a href="frankreich.html">Frankreich</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#spa">Spa Hotel →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="tuerkei.html">Türkei</a></li>
+                                <li><a href="aegypten.html">Ägypten</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#nature">Skandinavien →</a>
+                            <ul class="dropdown-submenu-content">
+                                <li><a href="norwegen.html">Norwegen</a></li>
+                                <li><a href="island.html">Island</a></li>
+                                <li><a href="groenland.html">Grönland</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img class="hero-img" src="imgs/norway-hero.jpg" alt="Beautiful Norway landscape">
+            <div class="herotext">
+                <h1>Urlaub in Norwegen</h1>
+                <p>Entdecken Sie die atemberaubende Natur und Fjorde Norwegens</p>
+            </div>    
+        </section>
+
+        <!-- Section 1: The Region -->
+        <section id="region" class="about">
+            <h2>Die Region</h2>
+            <p>Norwegen bietet spektakuläre Landschaften von dramatischen Fjorden bis zu majestätischen Bergen. Die unberührte Natur und die einzigartige nordische Kultur machen dieses Land zu einem unvergesslichen Reiseziel.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Fjorde</h3>
+                    <p>Tiefblaue Fjorde umgeben von steilen Felswänden - ein Naturwunder der Extraklasse</p>
+                </div>
+                <div class="card">
+                    <h3>Bergen & Küstenstädte</h3>
+                    <p>Charmante Städte mit bunten Holzhäusern und reicher Seefahrtsgeschichte</p>
+                </div>
+                <div class="card">
+                    <h3>Nordlicht</h3>
+                    <p>In den Wintermonaten tanzen die Aurora Borealis am Nachthimmel</p>
+                </div>
+            </div>
+        </section>
+
+<!-- Section 2: Accommodation -->
+<section id="accommodation" class="contact">
+    <h2>Unsere Unterkunft</h2>
+    <p>Wir haben für Sie eine erstklassige Unterkunft ausgewählt, die Komfort mit authentischem norwegischem Flair verbindet.</p>
+    
+    <div class="image-slider">
+        <div class="slider-container">
+            <img src="imgs/hotel-1.jpg" alt="Hotel Außenansicht" class="slider-img active">
+            <img src="imgs/hotel-2.jpg" alt="Hotelzimmer" class="slider-img">
+            <img src="imgs/hotel-3.jpg" alt="Hotel Restaurant" class="slider-img">
+            <img src="imgs/hotel-4.jpg" alt="Hotel Pool" class="slider-img">
+            <img src="imgs/hotel-5.jpg" alt="Hotel Spa" class="slider-img">
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+        <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+        
+        <!-- Dots -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    
+    <a href="https://example-hotel.com" target="_blank" class="hotel-link">Zur Hotel Website →</a>
+</section>
+
+        <!-- Section 3: Activities -->
+        <section id="activities" class="about">
+            <h2>Aktivitäten & Erlebnisse</h2>
+            <p>Ob Entspannung oder Abenteuer - Norwegen bietet für jeden Geschmack das Richtige.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>🧘 Entspannung</h3>
+                    <p>Wellness & Spa, Fjordkreuzfahrten, Yoga in der Natur, Saunabesuche</p>
+                </div>
+                <div class="card">
+                    <h3>⛰️ Sport & Abenteuer</h3>
+                    <p>Wandern, Kajakfahren, Angeln, Gletscherwanderungen, Skifahren</p>
+                </div>
+                <div class="card">
+                    <h3>🎨 Kultur & Sightseeing</h3>
+                    <p>Museumsbesuche, historische Stabkirchen, lokale Märkte erkunden</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ChoiceMade. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
